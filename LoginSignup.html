@@ -1,0 +1,132 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login/Signup</title>
+   <style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+	}
+	header {
+        background-color: #007BFF;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+		position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box; /* Include padding in width calculation */
+        z-index: 1000;
+	    }
+	header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        }
+    header nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        }
+    header nav a:hover {
+        text-decoration: underline;
+        }
+	.form-container{
+	   background:white;
+	   padding: 20px 30px;
+       border-radius: 10px;
+       box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+       width: 100%;
+       max-width: 400px;
+	   }
+	.form-container h2{
+	   align-items: center;
+       margin-bottom: 10px;
+	   font-size: 1.5rem;
+       }
+    .form-container input{
+	   width: 100%;
+       padding: 10px;
+       width: 100%;
+	   padding: 10px;
+	   margin-bottom: 10px;
+       }
+    .form-container input:focus {
+       border-color: #007BFF;
+       outline: none;
+       }	   
+	.form-container button {
+       width: 100%;
+       padding: 10px;
+       background-color: #007BFF;
+       color: white;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       }
+	.form-container button:hover {
+       background-color: #0056b3;
+       }
+    .form-container .signup-link {
+       text-align: center;
+       margin-top: 15px;
+       }
+    .form-container .signup-link a {
+       color: #007BFF;
+       text-decoration: none;
+       }
+    .form-container .signup-link a:hover {
+       text-decoration: underline;
+       }
+	@media (max-width: 480px) {
+       .form-container {
+            padding: 15px;
+            }
+        .form-container h2 {
+            font-size: 1.2rem;
+            }
+        .form-container input {
+            padding: 8px;
+            }
+        .form-container button {
+            padding: 8px;
+            font-size: 0.9rem;
+            }
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <div class="logo">A.Que Dental Clinic</div>
+        <nav>
+            <a href="A_que.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+            <a href="LoginSignup.html">Login/Sign Up</a>
+        </nav>
+    </header>
+	
+    <div class="form-container">
+	 <h2>Login</h2>
+	 <form>
+	    <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+	 </form>
+	 <div class="signup-link">
+            Don't have an account? <a href="#">Sign up</a>
+     </div>
+    </div>	
+</body>
+</html>
+		
